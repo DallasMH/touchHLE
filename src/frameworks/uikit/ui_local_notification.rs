@@ -146,7 +146,8 @@ pub fn platform_cancel_all() {
     }
 }
 
-/// Convert seconds-since-the-Unix-epoch (as from `-[NSDate timeIntervalSince1970]`)
+/// Convert seconds-since-the-Unix-epoch (as from
+/// `-[NSDate timeIntervalSince1970]`)
 /// to integer milliseconds, saturating on non-finite input.
 pub fn unix_seconds_to_millis(secs: NSTimeInterval) -> i64 {
     let ms = secs * 1000.0;
