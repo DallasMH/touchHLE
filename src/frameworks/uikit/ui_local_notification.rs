@@ -10,7 +10,8 @@
 //! running. touchHLE bridges this to the host platform's notification system so
 //! the same thing happens on the host. See [platform_schedule] /
 //! [platform_cancel_all] at the bottom of this file for the host side, and
-//! `ui_application.rs` (`scheduleLocalNotification:` / `cancelAllLocalNotifications`)
+//! `ui_application.rs` (`scheduleLocalNotification:` /
+//! `cancelAllLocalNotifications`)
 //! for where these get called.
 
 use crate::frameworks::foundation::NSTimeInterval;
